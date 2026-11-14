@@ -19,7 +19,7 @@ class Personne:
 
 # --------Utilisation de la classe Personne------------
 personne1 = Personne("Alice") #je crée un objet personne1 de type Personne
-# personne2 = Personne() #je crée un objet personne2 de type Personne
+personne2 = Personne("Bob") #je crée un objet personne2 de type Personne
 
 
 
