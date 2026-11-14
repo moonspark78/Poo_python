@@ -15,7 +15,9 @@
 # --------Définition de la classe Personne------------
 class Personne:
     def __init__(self, nom):
-        print("Bonjour je m'appelle " + nom )
+        print("Constructeur : " + nom )
+        
+        def 
 
 # --------Utilisation de la classe Personne------------
 personne1 = Personne("Alice") #je crée un objet personne1 de type Personne
