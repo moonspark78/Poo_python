@@ -4,6 +4,19 @@
 # - Execices,mise en situation,exemples
 
 
+# Personne (entité -> class)
+# Données : nom, age
+# Actions : (méthodes)
+#          -SePresenter
+#          -DemanderAge
+
+
+
+# --------Définition de la classe Personne------------
+
+# --------Utilisation de la classe Personne------------
+
+
 def afficher_informations_utilisateur(nom, age):
     print(f"La personne s'appelle {nom} et a {age} ans.")
 
