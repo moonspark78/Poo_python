@@ -15,14 +15,17 @@
 # --------Définition de la classe Personne------------
 class Personne:
     def __init__(self, nom):
+        self.nom = nom
         print("Constructeur : " + nom )
         
-        def 
+    def se_presenter(self):
+        print("Bonjour, je m'appelle " + self.nom)
 
 # --------Utilisation de la classe Personne------------
 personne1 = Personne("Alice") #je crée un objet personne1 de type Personne
 personne2 = Personne("Bob") #je crée un objet personne2 de type Personne
 
+personne1.se_presenter() #je demande à l'objet personne1 d'exécuter la méthode se_presenter
 
 
 
