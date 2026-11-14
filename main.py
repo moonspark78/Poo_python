@@ -14,12 +14,12 @@
 
 # --------Définition de la classe Personne------------
 class Personne:
-    def __init__(self):
-        print("Constructeur de la classe Personne appelé")
+    def __init__(self, nom):
+        print("Bonjour je m'appelle " + nom )
 
 # --------Utilisation de la classe Personne------------
-personne1 = Personne() #je crée un objet personne1 de type Personne
-personne2 = Personne() #je crée un objet personne2 de type Personne
+personne1 = Personne("Alice") #je crée un objet personne1 de type Personne
+# personne2 = Personne() #je crée un objet personne2 de type Personne
 
 
 
