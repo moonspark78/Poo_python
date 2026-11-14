@@ -13,6 +13,8 @@
 
 
 # --------Définition de la classe Personne------------
+class Personne:
+    pass
 
 # --------Utilisation de la classe Personne------------
 
