@@ -21,13 +21,21 @@ class Personne:
         
     def se_presenter(self):
         print(f"Bonjour, je m'appelle  {self.nom} et j'ai {self.age} ans.")
+        
+    def EstMajeur(self):
+        if self.age >= 18:
+            print(f"{self.nom} est majeur.")
+        else:
+            print(f"{self.nom} est mineur.")
 
 # --------Utilisation de la classe Personne------------
 personne1 = Personne("Alice", 30) #je crée un objet personne1 de type Personne
-personne2 = Personne("Bob", 25) #je crée un objet personne2 de type Personne
+personne2 = Personne("Bob", 15) #je crée un objet personne2 de type Personne
 
 personne1.se_presenter() #je demande à l'objet personne1 d'exécuter la méthode se_presenter
 personne2.se_presenter() #je demande à l'objet personne2 d'exécuter la méthode se_presenter
+
+
 
 
 
