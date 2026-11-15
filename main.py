@@ -14,18 +14,20 @@
 
 # --------Définition de la classe Personne------------
 class Personne:
-    def __init__(self, nom):
+    def __init__(self, nom, age):
         self.nom = nom    # cree une variable d'instance nom pour chaque objet de la classe Personne
+        self.age = age     # cree une variable d'instance age pour chaque objet de la classe Personne
         print("Constructeur : " + nom )
         
     def se_presenter(self):
-        print("Bonjour, je m'appelle " + self.nom)
+        print(f"Bonjour, je m'appelle  {self.nom} et j'ai {self.age} ans.")
 
 # --------Utilisation de la classe Personne------------
-personne1 = Personne("Alice") #je crée un objet personne1 de type Personne
-personne2 = Personne("Bob") #je crée un objet personne2 de type Personne
+personne1 = Personne("Alice", 30) #je crée un objet personne1 de type Personne
+personne2 = Personne("Bob", 25) #je crée un objet personne2 de type Personne
 
 personne1.se_presenter() #je demande à l'objet personne1 d'exécuter la méthode se_presenter
+personne2.se_presenter() #je demande à l'objet personne2 d'exécuter la méthode se_presenter
 
 
 
