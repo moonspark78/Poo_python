@@ -36,7 +36,7 @@ personne1.se_presenter() #je demande à l'objet personne1 d'exécuter la méthod
 personne2.se_presenter() #je demande à l'objet personne2 d'exécuter la méthode se_presenter
 
 
-personne1.EstMajeur() #je demande à l'objet personne1 d'exécuter la méthode EstMajeur
+personne2.EstMajeur() #je demande à l'objet personne2 d'exécuter la méthode EstMajeur
 
 
 
