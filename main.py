@@ -14,7 +14,7 @@
 
 # --------Définition de la classe Personne------------
 class Personne:
-    def __init__(self, nom, age):
+    def __init__(self, nom: str, age: int):
         self.nom = nom    # cree une variable d'instance nom pour chaque objet de la classe Personne
         self.age = age     # cree une variable d'instance age pour chaque objet de la classe Personne
         print("Constructeur : " + nom )
