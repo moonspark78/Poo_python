@@ -23,6 +23,8 @@ class Personne:
         print(f"Bonjour, je m'appelle  {self.nom} et j'ai {self.age} ans.")
         if self.EstMajeur():
             print("Je suis majeur.")
+        else:
+            print("Je suis mineur.")
         
     def EstMajeur(self):
         return self.age >= 18
