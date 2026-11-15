@@ -15,7 +15,7 @@
 # --------Définition de la classe Personne------------
 class Personne:
     def __init__(self, nom):
-        self.nom = nom
+        self.nom = nom    # cree une variable d'instance nom pour chaque objet de la classe Personne
         print("Constructeur : " + nom )
         
     def se_presenter(self):
