@@ -32,11 +32,12 @@ class Personne:
 # --------Utilisation de la classe Personne------------
 personne1 = Personne("Alice", 30) #je crée un objet personne1 de type Personne
 personne2 = Personne("Bob", 15) #je crée un objet personne2 de type Personne
+personne3 = Personne()
 
-personne = Personne()
 
 personne1.se_presenter() #je demande à l'objet personne1 d'exécuter la méthode se_presenter
 personne2.se_presenter() #je demande à l'objet personne2 d'exécuter la méthode se_presenter
+personne3.se_presenter() #je demande à l'objet personne3 d'exécuter la méthode se_presenter
 
 
 #personne2.EstMajeur() #je demande à l'objet personne2 d'exécuter la méthode EstMajeur
