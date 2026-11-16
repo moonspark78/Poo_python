@@ -20,7 +20,12 @@ class Personne:
         print("Constructeur : " + nom )
         
     def se_presenter(self):
-        print(f"Bonjour, je m'appelle  {self.nom} et j'ai {self.age} ans.")
+        if self.nom == "":
+            self.DemanderNom()
+        if self.age >0:
+            print(f"Bonjour, je m'appelle  {self.nom} et j'ai {self.age} ans.")
+        else:
+            print(f"Bonjour, je m'appelle  {self.nom}")
         if self.EstMajeur():
             print("Je suis majeur.")
         else:
@@ -28,6 +33,9 @@ class Personne:
         
     def EstMajeur(self):
         return self.age >= 18
+
+    def DemanderNom(self):
+        self.nom = input("Quel est votre nom ?")
     
 # --------Utilisation de la classe Personne------------
 personne1 = Personne("Alice", 30) #je crée un objet personne1 de type Personne
