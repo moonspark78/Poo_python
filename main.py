@@ -17,6 +17,8 @@ class Personne:
     def __init__(self, nom: str = "", age: int = 0):
         self.nom = nom    # cree une variable d'instance nom pour chaque objet de la classe Personne
         self.age = age     # cree une variable d'instance age pour chaque objet de la classe Personne
+        if nom == "":
+            self.DemanderNom()
         print("Constructeur : " + nom )
         
     def se_presenter(self):
@@ -41,7 +43,6 @@ class Personne:
 personne1 = Personne("Alice", 30) #je crée un objet personne1 de type Personne
 personne2 = Personne("Bob", 15) #je crée un objet personne2 de type Personne
 personne3 = Personne()
-personne3.DemanderNom()
 
 personne1.se_presenter() #je demande à l'objet personne1 d'exécuter la méthode se_presenter
 personne2.se_presenter() #je demande à l'objet personne2 d'exécuter la méthode se_presenter
