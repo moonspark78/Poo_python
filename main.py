@@ -42,6 +42,8 @@ class Personne:
 # --------Utilisation de la classe Personne------------
 
 liste_personnes = (Personne("Alice", 30), Personne("Bob", 15), Personne("Charlie", 20), Personne("David", 17))
+for personne in liste_personnes:
+    personne.se_presenter()
 
 
 #personne1 = Personne("Alice", 30) #je crée un objet personne1 de type Personne
