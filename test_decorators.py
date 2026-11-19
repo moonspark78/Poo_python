@@ -6,3 +6,7 @@ def add(a, b):
     print(f"{a} + {b} = {result}")
     return result
 
+def sub(a, b):
+    result = a - b
+    print(f"{a} - {b} = {result}")
+    return result
