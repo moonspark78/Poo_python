@@ -17,3 +17,7 @@ def solve(board):
                 rows[r] |= bit
                 cols[c] |= bit
                 boxes[b] |= bit
+                
+    def search():
+        best, candidates = None, None
+        minimum = 10
