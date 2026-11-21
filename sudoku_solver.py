@@ -7,3 +7,7 @@ def solve(board):
     rows = [0] * SIZE
     cols = [0] * SIZE
     boxes = [0] * SIZE
+
+    for r in range(SIZE):
+        for c in range(SIZE):
+            n = board[r][c]
