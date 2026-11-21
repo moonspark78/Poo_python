@@ -41,3 +41,6 @@ def solve(board):
             board[r][c] = n
             rows[r] |= bit
             cols[c] |= bit
+            boxes[b] |= bit
+            if search():
+                return True
