@@ -48,3 +48,10 @@ def solve(board):
             rows[r] ^= bit
             cols[c] ^= bit
             boxes[b] ^= bit
+        return False
+
+    return search()
+
+if __name__ == "__main__":
+    grid = [[int(x) for x in line.split()] for line in sys.stdin if line.strip()]
+    print("Solved!" if solve(grid) else "No solution")
