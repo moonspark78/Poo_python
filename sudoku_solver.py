@@ -46,3 +46,4 @@ def solve(board):
                 return True
             board[r][c] = 0
             rows[r] ^= bit
+            cols[c] ^= bit
