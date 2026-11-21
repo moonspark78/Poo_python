@@ -38,3 +38,6 @@ def solve(board):
         b = (r // 3) * 3 + c // 3
         for n in candidates:
             bit = 1 << (n - 1)
+            board[r][c] = n
+            rows[r] |= bit
+            cols[c] |= bit
