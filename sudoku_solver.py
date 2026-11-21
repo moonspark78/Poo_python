@@ -21,3 +21,13 @@ def solve(board):
     def search():
         best, candidates = None, None
         minimum = 10
+        for r in range(9):
+            for c in range(9):
+                if board[r][c] == 0:
+                    b = (r // 3) * 3 + c // 3
+                    mask = FULL & ~(rows[r] | cols[c] | boxes[b])
+                    options = [i + 1 for i in range(9) if mask & (1 << i)]
+                    if not options:
+                        return False
+                    if len(options) < minimum:
+                        best, candidates, minimum = (r, c), options, len(options)
