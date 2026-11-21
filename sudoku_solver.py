@@ -44,3 +44,5 @@ def solve(board):
             boxes[b] |= bit
             if search():
                 return True
+            board[r][c] = 0
+            rows[r] ^= bit
