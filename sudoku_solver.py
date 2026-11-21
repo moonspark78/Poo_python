@@ -55,3 +55,4 @@ def solve(board):
 if __name__ == "__main__":
     grid = [[int(x) for x in line.split()] for line in sys.stdin if line.strip()]
     print("Solved!" if solve(grid) else "No solution")
+    print("\n".join(" ".join(map(str, row)) for row in grid))
