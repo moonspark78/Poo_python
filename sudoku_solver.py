@@ -31,3 +31,10 @@ def solve(board):
                         return False
                     if len(options) < minimum:
                         best, candidates, minimum = (r, c), options, len(options)
+        if best is None:
+            return True
+
+        r, c = best
+        b = (r // 3) * 3 + c // 3
+        for n in candidates:
+            bit = 1 << (n - 1)
